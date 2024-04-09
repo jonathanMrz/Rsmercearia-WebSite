@@ -1,12 +1,35 @@
-.myfooter{
-    background-color: rgb(29, 29, 29);
-    color: rgb(255, 255, 255);
-    padding: 1x;
-    text-align: justify;
-    size: 1;
-    border-color: blue;
-    border: 100;
-}
+.footer	{
+            
+    margin: 0px auto 0px auto;
+    padding: 0px 0 0 0;
+    text-align: center;
+    position: static;
+    width: 100%;
+    
+    }
+.fixed { position: fixed; }
+.static { position: static; }
+#footer-left	{
+    color: #FFFFFF;	 
+    font-size: 11px;
+    line-height: 11px;
+    padding: 10px 0 10px 0px;
+    border-top: 5px solid #A5151E;
+    border-bottom: 1px solid #dbdbdb;
+    background: #2A2A2A;    
+    height: 12px;
+    
+    } 
+#footer-left a	{
+    color: #FFFFFF;
+    text-decoration: none;
+    }
+#footer-left 	 a.selected,
+#footer-left 	 a:hover	{
+    color: red;
+    text-decoration: none;
+    }
+    #conteudo{ height: 300px; width: 100%; background: yellow; }
 
 /* carrocel*/
 /* botões do carrocel */
