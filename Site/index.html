@@ -1,105 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8" />
-	<title>Juce Duarte - Web Design</title>
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="css/estilo.css" />
-</head>
-<body>
-	<div class="header">
-		<div class="linha">
-			<header>
-				<div class="coluna col4">
-					<h1 class="logo">Juce Duarte</h1>
-				</div>
-				<div class="coluna col8">
-					<nav>
-						<ul class="menu inline sem-marcador">
-							<li><a href="index.html">home</a></li>
-							<li><a href="clientes.html">clientes</a></li>
-							<li><a href="servicos.html">serviços</a></li>
-							<li><a href="sobre.html">sobre</a></li>
-							<li><a href="contato.html">contato</a></li>
-						</ul>
-					</nav>
-				</div>
-			</header>
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href=".myCss/index.css" type="Text/Css">
+    <title>Rs Mercearia</title>
+  </head>
+  <body>
+
+
+	<!-- navbar top da pagina -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" style="size: 250px;" href="#">
+			<img src="img/logo.ico" width="50" height="50" class="d-inline-block align-top" alt="">
+			<font size="6">Rs Mercearia</font>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Destaques</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Preços</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Link dropdown
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="#">Ação</a>
+				<a class="dropdown-item" href="#">Outra ação</a>
+				<a class="dropdown-item" href="#">Algo mais aqui</a>
+			  </div>
+			</li>
+		  </ul>
 		</div>
-	</div>
-	<div class="linha">
-		<section>
-			<div class="coluna col3 sidebar">
-				<h3>Clientes satisfeitos</h3>
-				<ul class="sem-marcador sem-padding">
-					<li><a href="">Nome da Empresa 1</a></li>
-					<li><a href="">Nome da Empresa 2</a></li>
-					<li><a href="">Nome da Empresa 3</a></li>
-					<li><a href="">Nome da Empresa 4</a></li>
-					<li><a href="">Nome da Empresa 5</a></li>
-					<li><a href="">Nome da Empresa 6</a></li>
-					<li><a href="">Nome da Empresa 7</a></li>
-				</ul>
-				<a href="cliente.html" class="botao">Ver todos &raquo;</a>
+	  </nav>
+	  <main role="main">
+  
+
+
+		<!-- Carrosseu -->
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img class="d-block w-100" src="img/index/banner1.jpg" width="500" height="400" alt="Primeiro Slide">
+			  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" src="img/index/banner2.jpg" width="500" height="400" alt="Segundo Slide">
+			  </div>
+			  <div class="carousel-item">
+				<img class="d-block w-100" src="img/index/banner3.jpg" width="500" height="400" alt="Terceiro Slide">
+			  </div>
 			</div>
-			<div class="coluna col9">
-				<h2>Último trabalho: <em>Empresa ABC</em></h2>
-				<img src="img/thumb-grande.jpg" alt="" />
-				<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-				o que fizemos ontem e hoje. Mas, se prestarmos atenção, vamos nos dar conta de 
-				que nenhum dia é igual a outro. Cada manhã traz uma benção escondida; uma benção 
-				que só serve para esse dia e que não se pode guardar nem desaproveitar.</p>
-				<a href="clientes.html" class="botao">Ver outros trabalhos &raquo; </a>
-			</div>
-		</section>
-	</div>
-	<div class="conteudo-extra">
-		<div class="linha">
-			<div class="coluna col7">
-				<section>
-					<h2>Como um site pode ajudar sua empresa?</h2>
-					<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-					o que fizemos ontem e hoje. Mas, se prestarmos atenção, vamos nos dar conta de </p>
-					<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-					o que fizemos ontem e hoje. Mas, se prestarmos atenção, vamos nos dar conta de </p>
-					<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-					o que fizemos ontem e hoje. Mas, se prestarmos atenção, vamos nos dar conta de </p>
-				</section>
-			</div>
-			<div class="coluna col5">
-				<h3>Últimas Notícias</h3>
-				<ul class="sem-marcador sem-padding noticias">
-					<li>
-						<img src="img/thumb-pequena.jpg" alt="" />
-						<h4>Título da notícia publicada no blog</h4>
-						<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-					o que fizemos ontem e hoje. <a href="">Leia mais &raquo;</a></p>
-					</li>
-					<li>
-						<img src="img/thumb-pequena.jpg" alt="" />
-						<h4>Título da notícia publicada no blog</h4>
-						<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-					o que fizemos ontem e hoje. <a href="">Leia mais &raquo;</a></p>
-					</li>
-					<li>
-						<img src="img/thumb-pequena.jpg" alt="" />
-						<h4>Título da notícia publicada no blog</h4>
-						<p>Podemos acreditar que tudo que a vida nos oferecerá no futuro é repetir 
-					o que fizemos ontem e hoje. <a href="">Leia mais &raquo;</a></p>
-					</li>
-				</ul>
-			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Anterior</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Próximo</span>
+			</a>
+		  </div>
+  
+
+	    <!-- container dos produtos -->
+		<div class="container">
+		  <div class="row">
+			<span class="border border-dark"><div class="col-md-3">
+			  <h2>Limpeza</h2>
+			  <img src="img/index/limpeza.jpg" width="120" height="120" alt="imagem de limpeza">
+			  <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+			</div></span>
+			<span class="border border-dark"><div class="col-md-3">
+			  <h2>Alimentos</h2>
+			  <img src="img/index/alimento.jpg" width="120" height="120" alt="imagem de alimento">
+			  <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+			</div></span>
+			<span class="border border-dark"><div class="col-md-3">
+			  <h2>Papelaria</h2>
+			  <img src="img/index/papelaria.jpg" width="120" height="120" alt="imagem de papelaria">
+			  <p><a class="btn btn-secondary" href="#" role="button">Ver detalhes &raquo;</a></p>
+			</div></span>
+			<span class="border border-dark"><div class="col-md-3" >
+			  <h2>Variados</h2>
+			  <img src="img/index/outros.jpg" width="120" height="120" class="rounded-circle" alt="imagem de 'outros'">
+			  <p><a class="btn btn-secondary" href="#" role="button">Ver produtos &raquo;</a></p>
+			</div></span>
+		  </div>
+		  <hr>
 		</div>
-	</div>
-	<div class="footer">
-		<div class="linha">
-			<footer>
-				<div class="coluna col12">
-					<span>&copy; 2021 - Juce Duarte Web Design</span>
-				</div>
-			</footer>
-		</div>
-	</div>
-</body>
+	  </main>
+
+	  <span class="border border-primary"></span>
+	<!-- rodá pé da pagina -->
+	  <footer class="myfooter">
+		<p><h2>© Rs Mercearia</h2></p>
+		<a>Nossos Contatos</a>
+			<li><a href="#">(21)998341021</a></li>
+			<li><a href="#">haven@gmail.com</a></li>
+			<li><a href="#">(21)987541632</a></li>
+	  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

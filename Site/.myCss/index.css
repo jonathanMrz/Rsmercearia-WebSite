@@ -1,0 +1,25 @@
+.myfooter{
+    background-color: rgb(29, 29, 29);
+    color: rgb(255, 255, 255);
+    padding: 1x;
+    text-align: justify;
+    size: 1;
+    border-color: blue;
+    border: 100;
+}
+
+/* carrocel*/
+/* botões do carrocel */
+.carousel-control-prev{
+    left: 10%;
+}
+.carousel-control-next{
+    right: 10%;
+}
+/* fim dos botões do carrocel */
+.carousel-inner{
+    background-color: rgb(26, 26, 26);
+    width: 70%;
+    height: 25%;
+    left: 15%;
+}
