@@ -54,12 +54,60 @@
     border-color: rgb(0, 0, 0);
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
 }
-.rounded-circle{
-    background-color:rgb(197, 197, 197);
-    border-width: 5px;
-    border-style: solid;
-    border-color:  rgb(118, 117, 121);
-}
+
 .container{
-    right: 0%;
+    left: 0%;
+}
+
+.{
+    left: 10%;
+}
+
+.featurette{
+    width: 100%;
+}
+
+:root {
+    --card-height: clamp(10rem, 25vw, 19rem);
+}
+
+.card-wrapper {
+    margin: 0px auto;
+    border: 1px solid var(--hover-font-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: calc(var(--card-height)*.05);
+}
+.card {
+    height: var(--card-height);
+    aspect-ratio: 1/1.2;
+    margin: calc(var(--card-height)*.04);
+    animation: cardBgAnimation 30s infinite ;
+    position: relative;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    border-radius: calc(var(--card-height)*.05);
+}
+
+.card:hover:before {
+    opacity: 0;
+}
+.card:hover {
+    scale: 1.05;
+    z-index: 1;
+}
+
+
+.card:first-child {
+    background: url(file:///C:/Users/FLAMA%20ADM/Documents/GitHub/rsmercearia/Site/img/index/outros.jpg);
+}
+.card:nth-child(2) {
+    background: url(https://i.postimg.cc/FH40cQqv/mado-el-khouly-MA8-Yo-Ao-Kpf-Y-unsplash.jpg);
+}
+.card:nth-child(3) {
+    background: url(https://i.postimg.cc/XYkdkzSC/malte-schmidt-en-Gr5-Ybj-QKQ-unsplash.jpg);
+}
+.card:nth-child(4) {
+    background: url(https://i.postimg.cc/XYkdkzSC/malte-schmidt-en-Gr5-Ybj-QKQ-unsplash.jpg);
 }
