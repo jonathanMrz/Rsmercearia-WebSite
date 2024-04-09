@@ -1,45 +1,15 @@
-.footer	{
-            
-    margin: 0px auto 0px auto;
-    padding: 0px 0 0 0;
-    text-align: center;
-    position: static;
+/*Outros start*/
+.featurette{
     width: 100%;
-    
-    }
-.fixed { position: fixed; }
-.static { position: static; }
-#footer-left	{
-    color: #FFFFFF;	 
-    font-size: 11px;
-    line-height: 11px;
-    padding: 10px 0 10px 0px;
-    border-top: 5px solid #A5151E;
-    border-bottom: 1px solid #dbdbdb;
-    background: #2A2A2A;    
-    height: 12px;
-    
-    } 
-#footer-left a	{
-    color: #FFFFFF;
-    text-decoration: none;
-    }
-#footer-left 	 a.selected,
-#footer-left 	 a:hover	{
-    color: red;
-    text-decoration: none;
-    }
-    #conteudo{ height: 300px; width: 100%; background: yellow; }
+}
+/*Outros end*/
 
-/* carrocel*/
-/* botões do carrocel */
-.carousel-control-prev{
-    left: 10%;
-}
-.carousel-control-next{
-    right: 10%;
-}
-/* fim dos botões do carrocel */
+
+/*Menu start*/
+/*Menu end*/
+
+
+/*Carrosseu start*/
 .carousel-inner{
     background-color: rgb(26, 26, 26);
     width: 70%;
@@ -47,38 +17,24 @@
     left: 15%;
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
 }
-.col-lg-3{
-    left: 0%;
-    border-width: 10px;
-    border-style:inset;
-    border-color: rgb(0, 0, 0);
-    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
-}
 
-.container{
-    left: 0%;
-}
 
-.{
+/* Botões do carrosseu start*/
+.carousel-control-prev{
     left: 10%;
 }
-
-.featurette{
-    width: 100%;
+.carousel-control-next{
+    right: 10%;
 }
+/* Botões do carrosseu end*/
+/*Carrosseu end*/
 
+
+/*Cards start*/
 :root {
     --card-height: clamp(10rem, 25vw, 19rem);
 }
 
-.card-wrapper {
-    margin: 0px auto;
-    border: 1px solid var(--hover-font-color);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-radius: calc(var(--card-height)*.05);
-}
 .card {
     height: var(--card-height);
     aspect-ratio: 1/1.2;
@@ -90,24 +46,102 @@
     border-radius: calc(var(--card-height)*.05);
 }
 
-.card:hover:before {
-    opacity: 0;
-}
-.card:hover {
-    scale: 1.05;
-    z-index: 1;
-}
-
-
 .card:first-child {
-    background: url(file:///C:/Users/FLAMA%20ADM/Documents/GitHub/rsmercearia/Site/img/index/outros.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/alimento.jpg);
 }
 .card:nth-child(2) {
-    background: url(https://i.postimg.cc/FH40cQqv/mado-el-khouly-MA8-Yo-Ao-Kpf-Y-unsplash.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/limpeza.jpg);
 }
 .card:nth-child(3) {
-    background: url(https://i.postimg.cc/XYkdkzSC/malte-schmidt-en-Gr5-Ybj-QKQ-unsplash.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/papelaria.jpg);
 }
 .card:nth-child(4) {
-    background: url(https://i.postimg.cc/XYkdkzSC/malte-schmidt-en-Gr5-Ybj-QKQ-unsplash.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/outros.jpg);
 }
+
+.header {
+    padding: 4rem 5rem;
+
+    .header-title {
+        position: relative;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -15px;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            width: 150px;
+            height: 5px;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.card {
+    position: relative;
+    height: 400px;
+    width: 250px;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        transition: all .25s ease;
+        z-index: -1;
+    }
+
+    .card-content {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        color: #FFF;
+        transition: background-color .25s ease, opacity .25s ease;
+        opacity: 0;
+
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            text-align: center;
+            font-weight: 200;
+        }
+    }
+
+    &:hover {
+        &:before {
+            transform: scale(1.2);
+        }
+
+        .card-content {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+        }
+    }
+}
+/*Cards end*/
