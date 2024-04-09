@@ -22,4 +22,21 @@
     width: 70%;
     height: 25%;
     left: 15%;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
+}
+.col-lg-3{
+    left: 0%;
+    border-width: 10px;
+    border-style:inset;
+    border-color: rgb(0, 0, 0);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
+}
+.rounded-circle{
+    background-color:rgb(197, 197, 197);
+    border-width: 5px;
+    border-style: solid;
+    border-color:  rgb(118, 117, 121);
+}
+.container{
+    right: 0%;
 }
