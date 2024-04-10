@@ -6,6 +6,9 @@
 
 
 /*Menu start*/
+.navbar-brand{
+    color: aqua;
+}
 /*Menu end*/
 
 
@@ -42,20 +45,21 @@
     animation: cardBgAnimation 30s infinite ;
     position: relative;
     cursor: pointer;
+    right: 20%;
     transition: 200ms ease-in-out;
     border-radius: calc(var(--card-height)*.05);
 }
 
-.card:first-child {
+.card-1{
     background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/alimento.jpg);
 }
-.card:nth-child(2) {
+.card-2{
     background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/limpeza.jpg);
 }
-.card:nth-child(3) {
+.card-3{
     background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/papelaria.jpg);
 }
-.card:nth-child(4) {
+.card-4{
     background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/outros.jpg);
 }
 
