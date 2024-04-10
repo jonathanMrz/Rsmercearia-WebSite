@@ -6,11 +6,8 @@
 
 
 /*Menu start*/
-.navbar-brand{
-    color: aqua;
-}
-/*Menu end*/
 
+/*Menu end*/
 
 /*Carrosseu start*/
 .carousel-inner{
@@ -21,7 +18,6 @@
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
 }
 
-
 /* Botões do carrosseu start*/
 .carousel-control-prev{
     left: 10%;
@@ -30,8 +26,8 @@
     right: 10%;
 }
 /* Botões do carrosseu end*/
-/*Carrosseu end*/
 
+/*Carrosseu end*/
 
 /*Cards start*/
 :root {
