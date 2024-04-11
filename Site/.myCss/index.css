@@ -14,6 +14,7 @@
     width: 70%;
     height: 25%;
     left: 15%;
+    border-radius: calc(var(--card-height)*.05);
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
 }
 
@@ -144,103 +145,166 @@
 }
 /*Cards end*/
 
-/*Carrossel_2 start*/  
-  h1 {
+/*Carrossel_intr start*/  
+body{
+    background: #000;
+    overflow-x: hidden;
+    
+  }
+.div-master{
+    margin-top: 50px;
+    background: #000;
     text-align: center;
-    margin: 1em 0;
-    font-family: sans-serif;
-  }
-  
-  .prodc {
-    position: relative;
-    padding: 15px;
-    max-width: 640px;
+    padding: 40px 3px;
+    width: 65%;
     margin: 0 auto;
+    overflow-x: overlay;
+    overflow-y: hidden;
   }
   
-  .gallery-wrapper {
-    overflow-x: auto;
+.item-c{
+    float: left;
+    width: 152px;
+    height: 270px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+    background: #000;
   }
-  
-  .arrow-left,
-  .arrow-right {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-    font-size: 20px;
-    line-height: 250px;
-    width: 40px;
-    color: #fff;
-    transition: all 600ms ease-in-out;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
-    cursor: pointer;
-    border: none;
+.carrossel{
+    height: 140px;
+    width: max-content;
   }
-  
-  .arrow-left:hover,
-  .arrow-right:hover {
-    opacity: 1;
+.item-c:hover{
+    float: left;
+    width: 228px;
+    margin-top:-40px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+    margin-left:-20px;
+    margin-right:-20px;
+    position: relative;
   }
-  
-  .arrow-right {
-    right: 0;
-    left: auto;
-    text-align: right;
-    background: linear-gradient(to right, transparent 0%, black 200%);
-  }
-  
-  .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 15px;
-  }
-  
-  .item {
-    width: 250px;
-    height: 250px;
-    flex-shrink: 0;
-    transition: all 600ms ease-in-out;
-    opacity: 0.5;
-  }
-  
-  .current-item {
-    opacity: 1;
-  }
-  
-  /* This is from w3schools */
-  /* 
-  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
-  /* Hide scrollbar for Chrome, Safari and Opera */
-  .gallery-wrapper::-webkit-scrollbar {
+.caption {
     display: none;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin-top: -54px;
+    padding: 14px 4px;
+    position: relative;
+    font-size: 12px;
+    font-family: verdana;
+    text-align: center;
+    width: 100%;
+  }
+.item-c:hover .caption{
+    display: block;
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .gallery-wrapper {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
   
-  .cyan {
-    background: cyan;
+#master{
+    color: #fff
   }
-  
-  .deeppink {
-    background: deeppink;
+.div-master::-webkit-scrollbar {
+    width: 1em;
+    height: 10px;
   }
-  
-  .turquoise {
-    background: turquoise;
+   
+.div-master::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px #191919;
+    border-radius: 9px;
   }
-  
-  .darkblue {
-    background: darkblue;
+   
+.div-master::-webkit-scrollbar-thumb {
+    background-color: #191919;
+    outline: 1px solid #363536;
+    border-radius: 9px;
   }
-  
-  .purple {
-    background: purple;
+.title{
+    color: #aaaaaa;
+    text-align: left;
+    font-family: verdana;
+    font-weight: 200;
+    margin-left: 9px;
   }
-/*Carrossel_2 end*/
+.item-c img{
+    width: 95%;
+    border: 8px solid #000;
+    opacity:0.0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+.show-it{
+    opacity:9.9 !important;
+  }
+.play {
+    background-image: url(http://www.iconsdb.com/icons/download/black/video-play-512.gif);
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -140px;
+  /*   z-index: 9999; */
+    position: relative;
+    margin-bottom: 148px;
+    opacity: 0.0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+    cursor: pointer;
+  }
+.item-c:hover .play{
+    opacity:9.9;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    transition: all .1s ease;
+    margin-top: -216px;
+    height: 70px;
+  }
+.before {
+    float: left;
+    color: #fff;
+    margin-top: 138px;
+    position: absolute;
+    left: 50px;
+    padding: 20px;
+    font-size: 30px;
+  }
+.after {
+    float: right;
+    color: #fff;
+    margin-top: -63px;
+    position: absolute;
+    left: 88%;
+    padding: 20px;
+    font-size: 30px;
+  }
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #ccc; 
+    cursor: pointer;
+  }
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-left:10px solid #ccc; 
+    cursor: pointer;
+  }
+/*Carrossel_int end*/

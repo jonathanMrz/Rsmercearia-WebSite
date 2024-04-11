@@ -1,33 +1,29 @@
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
-
-controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
-
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
+var content = "";
+var content2 = "";
+var list = new XMLHttpRequest();
+list.open('GET', 'https://s3.amazonaws.com/popular-movies/movies.json', true);
+list.onreadystatechange = function(){
+  if(this.readyState == 4){
+    var obj = JSON.parse(this.responseText);
+    for(i = 0; i < obj.length; i++){
+      content += '<div class="item-c"><img src="'+obj[i].poster_url+'"><div class="play"></div><div class="caption">'+obj[i].title+'</div></div>';
     }
-
-    if (currentItem >= maxItems) {
-      currentItem = 0;
+    for(j = (obj.length-1); j >= 0; j--){
+      content2 += '<div class="item-c"><img src="'+obj[j].poster_url+'"><div class="play"></div><div class="caption">'+obj[j].title+'</div></div>';
     }
+    document.getElementById('mylist').innerHTML = content;
+    document.getElementById('mylist2').innerHTML = content2;  
+  }
+}
+list.send();
 
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
-
-    items[currentItem].classList.add("current-item");
+function showImages(){
+  $(".item-c img").each(function(index) {
+    var times = (index*100);
+    setTimeout(function(){ $(".item-c img").eq(index).addClass("show-it"); }, times);
   });
-});
+}
+
+setTimeout(function(){
+  showImages();
+},1000);
