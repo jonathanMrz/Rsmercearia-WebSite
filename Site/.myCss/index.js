@@ -1,15 +1,15 @@
 var content = "";
 var content2 = "";
 var list = new XMLHttpRequest();
-list.open('GET', 'https://s3.amazonaws.com/popular-movies/movies.json', true);
+list.open('GET', '/Site/.myPhp/dados.json', true);
 list.onreadystatechange = function(){
   if(this.readyState == 4){
     var obj = JSON.parse(this.responseText);
     for(i = 0; i < obj.length; i++){
-      content += '<div class="item-c"><img src="'+obj[i].poster_url+'"><div class="play"></div><div class="caption">'+obj[i].title+'</div></div>';
+      content += '<div class="item-c"><img src="'+obj[i].prod_url+'"><div class="play"></div><div class="caption">'+obj[i].nome+'</div></div>';
     }
     for(j = (obj.length-1); j >= 0; j--){
-      content2 += '<div class="item-c"><img src="'+obj[j].poster_url+'"><div class="play"></div><div class="caption">'+obj[j].title+'</div></div>';
+      content2 += '<div class="item-c"><img src="'+obj[j].prod_url+'"><div class="play"></div><div class="caption">'+obj[j].nome+'</div></div>';
     }
     document.getElementById('mylist').innerHTML = content;
     document.getElementById('mylist2').innerHTML = content2;  
