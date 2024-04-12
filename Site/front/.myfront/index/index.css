@@ -168,7 +168,7 @@
             content: '';
             position: absolute;
             left: 0;
-            bottom: -15px;
+            bottom: -2px;
             background:#8c9dbe;
             width: 200px;
             height: 5px;
@@ -177,10 +177,20 @@
     }
 }
 .roww{
-    margin: 1000px;
     overflow: hidden;
     background-color: #5f6a81;
     border-radius: calc(var(--card-height)*.05);
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
+}
+.owl-item{
+    color: #e7e6e6;
+    border-radius: calc(var(--card-height)*.05);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
+}
+.owl-carousel{
+    background-color: rgba(0, 0, 0, 0.137);
+}
+#demos .owl-carousel {
+    .item{height:12rem;;background:000000;}
 }
 /*Carrossel_int end*/
