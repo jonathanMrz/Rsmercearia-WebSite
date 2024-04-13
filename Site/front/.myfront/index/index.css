@@ -15,7 +15,7 @@
 .carousel-inner{
     background-color: rgb(26, 26, 26);
     width: 70%;
-    height: 400px;
+    height: 450px;
     left: 15%;
     border-radius: calc(var(--card-height)*.05);
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
@@ -23,10 +23,18 @@
 
 .carousel-control-prev{
     left: 10%;
+    width:3% ;
+    margin-top: 13%;
+    height: 7%;
+    background-color: #1f2635c9;
 }
 
 .carousel-control-next{
     right: 10%;
+    width:3% ;
+    margin-top: 13%;
+    height: 7%;
+    background-color: #1f2635c9;
 }
 /*Carrosseu end*/
 
@@ -53,19 +61,19 @@
 
 .card-1{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/alimento.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/pereciveis.jpg);
 }
 .card-2{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/limpeza.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/limpeza.jpg);
 }
 .card-3{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/papelaria.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/papelaria.jpg);
 }
 .card-4{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/outros.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/outros.jpg);
 }
 
 .header {
@@ -104,6 +112,7 @@
     width: 250px;
     box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    background-size: cover;
     
     &::before {
         content: '';
@@ -203,6 +212,7 @@
     }
 
 #demos .owl-carousel .item {
+    background-size: cover;
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.301);
     position: relative;
     overflow: hidden;
@@ -224,6 +234,7 @@
     }
 
     .item-card {
+        background-size: cover;
         display: flex;
         height: 100%;
         width: 100%;
@@ -267,19 +278,20 @@
     }
 }
 .item-card{
+    background-size: cover;
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
 }
 .icard-1{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/limpeza.jpg);
+    background: url(https://github.com/jonathanMrz/rsmercearia/blob/main/Site/front/img/index/caurosel-prod/picoles.jpg?raw=true);
 }
 .icard-2{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/limpeza.jpg);
+    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/caurosel-prod/sacole.jpg);
 }
 .icard-3{
     position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/img/index/papelaria.jpg);
+    background: url(https://github.com/jonathanMrz/rsmercearia/blob/main/Site/front/img/index/caurosel-prod/tomate.jpg?raw=true);
 }
 .icard-4{
     position: absolute;
