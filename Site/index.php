@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="pt-br">
   <head>
     <!-- Meta tags Obrigatórias -->
@@ -25,7 +25,7 @@
 	<!-- Code start-->
 	<!-- Menu start -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" style="size: 250px;" href="index.html">
+		<a class="navbar-brand" style="size: 250px;" href="index.php">
 			<img src="front/img/logo.ico" width="50" height="50" class="d-inline-block align-top" alt="">
 			<font size="6">Rs Mercearia</font>
 		</a>
@@ -39,20 +39,20 @@
 				<img src="front/img/categoria.ico" width="25" height="25" alt="Categorias"> Categorias de produto
 			  </a>
 			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-				<a class="dropdown-item" href="pareciveis.html">Parecíveis</a>
-				<a class="dropdown-item" href="limpeza.html">Limpeza</a>
-				<a class="dropdown-item" href="papelaria.html">Papelaria</a>
-				<a class="dropdown-item" href="outros.html">Outros</a>
+				<a class="dropdown-item" href="pareciveis.php">Parecíveis</a>
+				<a class="dropdown-item" href="limpeza.php">Limpeza</a>
+				<a class="dropdown-item" href="papelaria.php">Papelaria</a>
+				<a class="dropdown-item" href="outros.php">Outros</a>
 			  </div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="carrinho.html"><img src="front/img/carrinho.ico" width="20" height="20" alt="Categorias"> Carrinho</a>
+				<a class="nav-link" href="carrinho.php"><img src="front/img/carrinho.ico" width="20" height="20" alt="Categorias"> Carrinho</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="login.html"><img src="front/img/perfil.ico" width="20" height="20" alt="Categorias"> Perfil</a>
+				<a class="nav-link" href="login.php"><img src="front/img/perfil.ico" width="20" height="20" alt="Categorias"> Perfil</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="sobre.html"><img src="front/img/sobre.ico" width="20" height="20" alt="Categorias"> Sobre</a>
+				<a class="nav-link" href="sobre.php"><img src="front/img/sobre.ico" width="20" height="20" alt="Categorias"> Sobre</a>
 			</li>
 		  </ul>
 		</div>
@@ -66,7 +66,7 @@
 			<div class="carousel-inner">
         
 			  <div class="carousel-item active">
-				<a href="produto.html"><img class="d-block w-100" src="front/img/index/caurosel-top/banner1.jpg" width="500" height="400" alt="Primeiro Slide"></a>
+				<a href="produto.php"><img class="d-block w-100" src="front/img/index/caurosel-top/banner1.jpg" width="500" height="400" alt="Primeiro Slide"></a>
 			  </div>
 			  <div class="carousel-item">
 				<a href="https://twitter.com/"><img class="d-block w-100" src="front/img/index/caurosel-top/banner2.jpg" width="500" height="400" alt="Segundo Slide"></a>
@@ -93,28 +93,28 @@
 	</div>
 	<div class="container">
 
-		<a href="pareciveis.html"><div class="card card-1">
+		<a href="pareciveis.php"><div class="card card-1">
 			<div class="card-content">
 				<div class="title">Perecíveis</div>
 				<p>Enlatados, picole, carne, alimentos no geral.</p>
 			</div>
 		</div></a>
 
-		<a href="limpeza.html"><div class="card card-2">
+		<a href="limpeza.php"><div class="card card-2">
 			<div class="card-content">
 				<div class="title">Limpeza</div>
 				<p>Produtos de limpeza no geral, e utensílios que ajudam a arrumar e organizar sua moradia.</p>
 			</div>
 		</div></a>
 
-		<a href="papelaria.html"><div class="card card-3">
+		<a href="papelaria.php"><div class="card card-3">
 			<div class="card-content">
 				<div class="title">Papelaria</div>
 				<p>Acessórios escolares, de escritorio, utilitarios de anotação, entre outros..</p>
 			</div>
 		</div></a>
 
-		<a href="outros.html"><div class="card card-4">
+		<a href="outros.php"><div class="card card-4">
 			<div class="card-content">
 				<div class="title">Outros</div>
 				<p>Objetos variados, que não e enquadra em nenhuma das categorias acima.</p>
@@ -133,43 +133,43 @@
 		<div class="owl-carousel owl-theme">
 
 			<div class="item" >
-				<a href="produto.html"><div class="item-card icard-1">
+				<a href="produto.php"><div class="item-card icard-1">
 					<div class="title">Picolé</div>
 					<p class="uni">R$2.00 comum R$3.00 especial</p>
 				</div></a>
 			  </div>
 		  <div class="item" >
-			<a href="produto.html"><div class="item-card icard-2">
+			<a href="produto.php"><div class="item-card icard-2">
 				<div class="title">Sacolé</div>
 				<p class="uni">R$1.00 a unidade</p>
 			</div></a>
 		  </div>
 		  <div class="item" >
-			<a href="produto.html"><div class="item-card icard-3">
+			<a href="produto.php"><div class="item-card icard-3">
 				<div class="title">Massa de bolo Regina</div>
 				<p class="uni">R$5.50 a unidade</p>
 			</div></a>
 		  </div>
 		  <div class="item" >
-			<a href="produto.html"><div class="item-card icard-4">
+			<a href="produto.php"><div class="item-card icard-4">
 				<div class="title">Molho de tomate Pramesa</div>
 				<p class="uni">R$2.00 a unidade</p>
 			</div></a>
 		  </div>
 		  <div class="item" >
-			<a href="produto.html"><div class="item-card icard-5">
+			<a href="produto.php"><div class="item-card icard-5">
 				<div class="title">Papel higiênico Max</div>
 				<p class="uni">R$6.00 o pacote</p>
 			</div></a>
 		  </div>
 		  <div class="item" >
-			<a href="produto.html"><div class="item-card icard-6">
+			<a href="produto.php"><div class="item-card icard-6">
 				<div class="title">Vassoura piaçava</div>
 				<p class="uni">R$11.00 a unidade</p>
 			</div></a>
 		  </div>
 		  <div class="item" >
-			<a href="produto.html"><div class="item-card icard-7">
+			<a href="produto.php"><div class="item-card icard-7">
 				<div class="title">Alvejante Casa&Perfume</div>
 				<p class="uni">R$6.00 a unidade</p>
 			</div></a>
