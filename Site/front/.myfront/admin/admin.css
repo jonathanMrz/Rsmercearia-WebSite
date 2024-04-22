@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+label,input{
+    display: block;
+    line-height: 30px;
+    height: 30px;
+    outline: none;
+    font-size: 13pt;
+    width: 100%;
+}
+form{
+    width: 330px;
+    background-color: rgba(0, 0, 0, 0.521);
+    padding: 20px;
+    margin: 30px 0px auto;
+}
+input[type="submit"]{
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+#formulario{
+    width: 45%;
+    height: 500px;
+    float: left;
+    margin-left: 50px;
+}
+#tabela{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+h2{
+    text-align: center;
+}
+table{
+    width: 100%;
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+tr{
+    line-height: 30px;
+}
+tr#titulo{
+    font: bold;
+    background-color:rgb(0,0,0,.6);
+    color: white;
+}
+td{
+    padding: 0px 5px;
+}
+a{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 0px 5px;
+    text-decoration: none;
+
+}
+
+h1{
+    background-color: rgba(0, 0, 0, 0.493);
+    position: absolute;
+    width: 150px;
+    border-radius: 100px;
+    margin-block: -20px;
+
+    content: '';
+            left: 0;
+            background: #000000;
+            width: 100%;
+            height: 2px;
+            border-radius: 1rem;
+}
+.produto{
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1.2rem 1rem;
+}
+.usuario{
+    background-color: rgb(255, 255, 255);
+    display:flex;
+    justify-content: space-between;
+    align-items:start;
+    padding: 2rem 1rem;
+}

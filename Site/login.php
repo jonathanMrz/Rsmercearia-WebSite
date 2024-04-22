@@ -51,25 +51,31 @@
 				<form action="backend/login/login.php" method="POST" id="register" tabindex="502">
 					<h3>Criar conta</h3>
 					<div class="name">
-						<input name="nome" type="text" maxlength="100" name="">
+						<input name="nome" id="nome" type="text" maxlength="100">
 						<label>Nome completo</label>
 					</div>
 					<div class="mail">
-						<input name="email" type="email" maxlength="100" name="">
+						<input name="email" id="telefone" type="email" maxlength="100">
 						<label>E-mail</label>
 					</div>
                     <div class="telefone">
-                        <input name="telefone" type="tel" id="phone" name="phone" maxlength="15">
+                        <input name="telefone" id="telefone" type="tel" id="phone" maxlength="15">
 						<label for="phone">Telefone</label>
 					</div>
+					<div class="cpf">
+						<input name="cpf" id="cpf" type="text" maxlength="20">
+						<label>CPF</label>
+					</div>
 					<div class="passwd">
-						<input name="senha" type="password" maxlength="30" name="">
+						<input name="senha" id="senha type="password" maxlength="30">
 						<label>Senha</label>
 					</div>
 					<div class="Enviar">
-						<button name="enviar" type="submit" class="dark">Registrar</button>
+						<button name="enviar" id="enviar" type="submit" class="dark">Registrar</button>
 					</div>
 				</form>
 			</div>
 		</div>	
 	</div>
+</body>
+</html>
