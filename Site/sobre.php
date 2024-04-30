@@ -64,8 +64,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section_title_all text-center">
-                            <h3 class="font-weight-bold">Welcome To <span class="text-custom">Lorem Ipsum</span></h3>
-                            <p class="section_subtitle mx-auto text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>Lorem Ipsum has been the industry's standard dummy text.</p>
+                            <h3 class="font-weight-bold">A História<span class="text-custom"> e os Criadores da Rsmercearia</span></h3>
+                            <p class="section_subtitle mx-auto text-muted">e algumas outras observações sobre nós</p>
                             <div class="">
                                 <i class=""></i>
                             </div>
@@ -77,7 +77,7 @@
                     <div class="col-lg-6">
                         <div class="about_header_main mt-3">
                             <div class="about_icon_box">
-                                <p class="text_custom font-weight-bold">Lorem Ipsum is simply dummy text</p>
+                                <p class="text_custom font-weight-bold"></p>
                             </div>
                             <h4 class="about_heading text-capitalize font-weight-bold mt-4">Lorem Ipsum is simply dummy text of the printing industry.</h4>
                             <p class="text-muted mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
