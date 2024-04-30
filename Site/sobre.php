@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS/Js -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<!-- Meu CSS/Js-->
   <link rel="stylesheet" href="front/.externo/index/docs.theme.min.css">
 	<link rel="stylesheet" href="front/.myfront/all.css">
@@ -60,77 +60,67 @@
 	  <main role="main">
     <!--Menu end-->
 <section class="section_all bg-light" id="about">
-            <div class="container">
+          <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section_title_all text-center">
                             <h3 class="font-weight-bold">A História<span class="text-custom"> e os Criadores da Rsmercearia</span></h3>
-                            <p class="section_subtitle mx-auto text-muted">e algumas outras observações sobre nós</p>
+                            <p class="section_subtitle mx-auto text-muted">E algumas outras observações sobre nós</p>
                             <div class="">
                                 <i class=""></i>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="row vertical_content_manage mt-5">
-                    <div class="col-lg-6">
-                        <div class="about_header_main mt-3">
-                            <div class="about_icon_box">
-                                <p class="text_custom font-weight-bold"></p>
-                            </div>
-                            <h4 class="about_heading text-capitalize font-weight-bold mt-4">Lorem Ipsum is simply dummy text of the printing industry.</h4>
-                            <p class="text-muted mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-
-                            <p class="text-muted mt-3"> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
-                        </div>
+                  <div class="col-lg-6">
+                      <div class="about_header_main mt-3">
+                        <h4 class="about_heading font-weight-bold ">História da Rsmercearia</h4>
+                        <p class="text-muted mt-3">A loja foi fundada em 2017 em Belforoxo com o intuito de conseguir dinheiro para se desenvolver financeiramente e crescer no ramo do comercio.</p>
+                      <p class="text-muted mt-3"> E por conta do coronavirus a loja deve que se atualizar para poder se manter, assim nasceu a primeira versão da Rsmercearia, contudo não foi levado a frente. Porém em 2024 novamente começaram a desenvolver a versão online da loja, começando do zero, após alguns meses foi concluido e lançado a publico</p>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="img_about mt-3">
-                            <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
-                        </div>
-                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="img_about mt-3">
+                    <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+                  </div>
                 </div>
-
+              </div>
                 <div class="row mt-3">
-                    <div class="col-lg-4">
-                        <div class="about_content_box_all mt-3">
-                            <div class="about_detail text-center">
-                                <div class="about_icon">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </div>
-                                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Creative Design</h5>
-                                <p class="edu_desc mt-3 mb-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                  <div class="col-lg-4">
+                      <div class="about_content_box_all mt-3">
+                          <div class="about_detail text-center">
+                              <h5 class="text-dark mt-3 font-weight-bold">Desenvolvedor Full Stack</h5>
+                              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                              <p class="edu_desc mt-3 mb-0 text-muted">Jonathan Morozenviski Toledo</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="about_content_box_all mt-3">
+                          <div class="about_detail text-center">
+                            <div class="about_icon">
+                              <i class="fab fa-angellist"></i>
                             </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">We make Best Result</h5>
+                          <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                         </div>
+                      </div>
                     </div>
-
                     <div class="col-lg-4">
-                        <div class="about_content_box_all mt-3">
-                            <div class="about_detail text-center">
-                                <div class="about_icon">
-                                    <i class="fab fa-angellist"></i>
-                                </div>
-                                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">We make Best Result</h5>
-                                <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4">
-                        <div class="about_content_box_all mt-3">
-                            <div class="about_detail text-center">
-                                <div class="about_icon">
-                                    <i class="fas fa-paper-plane"></i>
-                                </div>
-                                <h5 class="text-dark text-capitalize mt-3 font-weight-bold">best platform </h5>
-                                <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="about_content_box_all mt-3">
+                    <div class="about_detail text-center">
+                  <div class="about_icon">
+                    <i class="fas fa-paper-plane"></i>
+                  </div>
+                  <h5 class="text-dark text-capitalize mt-3 font-weight-bold">best platform </h5>
+              <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
 
 
 
