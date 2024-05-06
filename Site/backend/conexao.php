@@ -63,4 +63,4 @@ $resultado = $cmd -> fetch(PDO::FETCH_ASSOC);
 foreach ($resultado as $key => $value) {
     echo $key.':'.$value.'<br>';
 }
-?>
+
