@@ -1,5 +1,5 @@
 .body{
-	background-image: url(/Site/front/img/login/backgoundlogin.jpg);
+	background-image: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/login/backgoundlogin.jpg);
 
 	padding: 1px;
 	min-height: 100vh;
@@ -11,7 +11,7 @@
 	border-radius: 10px;
 	width: 70%;
 	margin: 100px auto;
-	background: rgba(0, 0, 0, 0.651);
+	background: rgba(255, 255, 255, 0.651);
 	min-height: 400px;
 	display:table;
 	position: relative;
@@ -22,7 +22,7 @@
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	color: #fff;
+	color: #000000;
 }
 .veen button{
 	background: transparent;
@@ -32,17 +32,17 @@
 	border-radius: 50px;
 	background-clip: padding-box;
 	position: relative;
-	color: #FFF;
+	color: #000000;
 	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
 	transition: all .25s;
 }
 .veen button.dark{
 	border-color: #000000;
-	background: #000000;
+	background: #ffffff;
 }
 .veen .move button.dark{
 	border-color: #000000;
-	background: #000000;
+	background: #ffffff;
 }
 .veen .splits p{
 	font-size: 18px;
@@ -104,7 +104,7 @@ visibility: hidden;
 	text-align: left;
 	left: 15px;
 	padding: 0 5px;
-	color: #999;
+	color: #000000;
 	pointer-events: none;
 }
 .veen .wrapper h3{
@@ -188,13 +188,13 @@ box-shadow: inset 0 0 0 50px #ffffff
 .loginless{
 	border-radius: 10px;
 	position: absolute;
-	background-color: #0e1d69;
+	background-color: #818181;
 	height: 25px;
 	width: 100px;
 	left:62.8%;
-	border: solid 2px #171d5c;
+	border: solid 2px #414141;
 	margin: 15%;
 	text-align: center;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	box-shadow: 0 0 0px rgba(0, 0, 0, 0.589), 0 1px 2px rgba(0, 0, 0, 0.733);
 }
