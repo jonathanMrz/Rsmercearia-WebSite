@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-         <!-- Meta tags Obrigatórias -->
+	<!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS/Js -->
@@ -11,9 +11,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<!-- Meu CSS/Js-->
-    <link rel="stylesheet" href="front/.myfront/all.css">
-	<link rel="stylesheet" href="front/.myfront/login/login.css">
-    <script src="front/.myfront/login/login.js"></script>
+    <link rel="stylesheet" href="front/myfront/all.css">
+	<link rel="stylesheet" href="front/myfront/login/login.css">
+    <script src="front/myfront/login/login.js"></script>
 	<!-- Externo CSS/Js-->
 
     <title>Login</title>
@@ -27,11 +27,11 @@
 		<div class="veen">
 			<div class="login-btn splits">
 				<p>Já é usuário?</p>
-				<button class="active">Login</button>
+				<button class="dark">Login</button>
 			</div>
 			<div class="rgstr-btn splits">
 				<p>Não tem uma conta?</p>
-				<button>Registrar</button>
+				<button class="dark">Registrar</button>
 			</div>
 			<div class="wrapper">
 				<form id="login" tabindex="500">

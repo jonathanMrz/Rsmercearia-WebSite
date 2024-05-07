@@ -12,8 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<!-- Meu CSS/Js-->
-  <link rel="stylesheet" href="front/.externo/index/docs.theme.min.css">
-	<link rel="stylesheet" href="front/.myfront/all.css">
+  <link rel="stylesheet" href="front/externo/index/docs.theme.min.css">
+	<link rel="stylesheet" href="front/myfront/all.css">
 	<!-- Externo CSS/Js-->
 
 
@@ -30,20 +30,20 @@
 			<font size="6">Rs Mercearia</font>
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-		  <span class="navbar-toggler-icon"></span>
+		<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		  <ul class="navbar-nav">
+		<ul class="navbar-nav">
 			<li class="nav-item dropdown">
-			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<img src="front/img/categoria.ico" width="25" height="25" alt="Categorias"> Categorias de produto
-			  </a>
-			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			</a>
+			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 				<a class="dropdown-item" href="pareciveis.php">Parecíveis</a>
 				<a class="dropdown-item" href="limpeza.php">Limpeza</a>
 				<a class="dropdown-item" href="papelaria.php">Papelaria</a>
 				<a class="dropdown-item" href="outros.php">Outros</a>
-			  </div>
+			</div>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="carrinho.php"><img src="front/img/carrinho.ico" width="20" height="20" alt="Categorias"> Carrinho</a>
@@ -54,73 +54,66 @@
 			<li class="nav-item">
 				<a class="nav-link" href="sobre.php"><img src="front/img/sobre.ico" width="20" height="20" alt="Categorias"> Sobre</a>
 			</li>
-		  </ul>
+		</ul>
 		</div>
-	  </nav>
-	  <main role="main">
+	</nav>
+	<main role="main">
     <!--Menu end-->
-<section class="section_all bg-light" id="about">
-          <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title_all text-center">
-                            <h3 class="font-weight-bold">A História<span class="text-custom"> e os Criadores da Rsmercearia</span></h3>
-                            <p class="section_subtitle mx-auto text-muted">E algumas outras observações sobre nós</p>
-                            <div class="">
-                                <i class=""></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row vertical_content_manage mt-5">
-                  <div class="col-lg-6">
-                      <div class="about_header_main mt-3">
-                        <h4 class="about_heading font-weight-bold ">História da Rsmercearia</h4>
-                        <p class="text-muted mt-3">A loja foi fundada em 2017 em Belforoxo com o intuito de conseguir dinheiro para se desenvolver financeiramente e crescer no ramo do comercio.</p>
-                      <p class="text-muted mt-3"> E por conta do coronavirus a loja deve que se atualizar para poder se manter, assim nasceu a primeira versão da Rsmercearia, contudo não foi levado a frente. Porém em 2024 novamente começaram a desenvolver a versão online da loja, começando do zero, após alguns meses foi concluido e lançado a publico</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                      <div class="img_about mt-3">
-                    <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
-                  </div>
-                </div>
-              </div>
-                <div class="row mt-3">
-                  <div class="col-lg-4">
-                      <div class="about_content_box_all mt-3">
-                          <div class="about_detail text-center">
-                              <h5 class="text-dark mt-3 font-weight-bold">Desenvolvedor Full Stack</h5>
-                              <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-                              <p class="edu_desc mt-3 mb-0 text-muted">Jonathan Morozenviski Toledo</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <div class="about_content_box_all mt-3">
-                          <div class="about_detail text-center">
-                            <div class="about_icon">
-                              <i class="fab fa-angellist"></i>
-                            </div>
-                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">We make Best Result</h5>
-                          <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4">
-                    <div class="about_content_box_all mt-3">
-                    <div class="about_detail text-center">
-                  <div class="about_icon">
-                    <i class="fas fa-paper-plane"></i>
-                  </div>
-                  <h5 class="text-dark text-capitalize mt-3 font-weight-bold">best platform </h5>
-              <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            </div>
+  <section class="section_all bg-light" id="about">
+    
+    <div class="container"> 
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section_title_all text-center">
+            <h3 class="font-weight-bold">A História<span class="text-custom"> e os Criadores da Rsmercearia</span></h3>
+            <p class="section_subtitle mx-auto text-muted">E algumas outras observações sobre nós</p>
           </div>
         </div>
       </div>
-  </div>
-</section>
+
+      <div class="row vertical_content_manage mt-5">
+        <div class="col-lg-6">
+          <div class="about_header_main mt-3">
+            <h4 class="about_heading font-weight-bold ">História da Rsmercearia</h4>
+            <p class="text-muted mt-3">A loja foi fundada em 2017 em Belforoxo com o intuito de conseguir dinheiro para se desenvolver financeiramente e crescer no ramo do comercio.</p>
+            <p class="text-muted mt-3"> E por conta do coronavirus a loja deve que se atualizar para poder se manter, assim nasceu a primeira versão da Rsmercearia, contudo não foi levado a frente. Porém em 2024 novamente começaram a desenvolver a versão online da loja, começando do zero, após alguns meses foi concluido e lançado a publico</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="img_about mt-3">
+            <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="about_detail text-center col-lg-3">
+          <h5 class="text-dark mt-3 font-weight-bold">Diretor Executivo</h5>
+          <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
+          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Gabriel Alves Da Silva</p>
+        </div>
+
+        <div class="about_detail text-center col-lg-3">
+          <h5 class="text-dark mt-3 font-weight-bold">Desenvolvedor full stack</h5>
+          <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
+          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Jonathan Morozenviski Toledo</p>
+        </div>
+
+        <div class="about_detail text-center col-lg-3">
+          <h5 class="text-dark mt-3 font-weight-bold">Marketing</h5>
+          <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
+          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Samara</p>
+        </div>
+
+        <div class="about_detail text-center col-lg-3">
+          <h5 class="text-dark mt-3 font-weight-bold">xxxxx</h5>
+          <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
+          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Maria Lopes</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -132,7 +125,7 @@
 
 
 
-	  
+
 	<!-- Rodape start-->
   <footer class="bg-dark text-light">
     <div class="container-fluid py-3">
