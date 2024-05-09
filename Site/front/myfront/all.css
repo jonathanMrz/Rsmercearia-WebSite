@@ -6,5 +6,10 @@ html{
 }
 .ah{
     color: aliceblue;
+    transition: all .2s ease-in-out; 
+}
+.ah:hover{
+    color: aliceblue;
+    transform: scale(1.1);
 }
 

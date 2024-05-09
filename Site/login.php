@@ -15,23 +15,22 @@
 	<link rel="stylesheet" href="front/myfront/login/login.css">
     <script src="front/myfront/login/login.js"></script>
 	<!-- Externo CSS/Js-->
-
+	<script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Login</title>
 </head>
 <body>
-    <script  src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" ></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<div class="body">
+<div class="img-back">
     <a href="index.php"><div class="loginless">Só olhar</div></a>
 		<div class="veen">
 			<div class="login-btn splits">
 				<p>Já é usuário?</p>
-				<button class="dark">Login</button>
+				<button class="">Login</button>
 			</div>
 			<div class="rgstr-btn splits">
 				<p>Não tem uma conta?</p>
-				<button class="dark">Registrar</button>
+				<button class="">Registrar</button>
 			</div>
 			<div class="wrapper">
 				<form id="login" tabindex="500">
@@ -45,7 +44,7 @@
 						<label>Senha</label>
 					</div>
 					<div class="submit">
-						<button class="dark">Login</button>
+						<button class="">Login</button>
 					</div>
 				</form>
 				<form action="backend/login/login.php" method="POST" id="register" tabindex="502">
@@ -71,7 +70,7 @@
 						<label>Senha</label>
 					</div>
 					<div class="Enviar">
-						<button name="enviar" id="enviar" type="submit" class="dark">Registrar</button>
+						<button name="enviar" id="enviar" type="submit" class="">Registrar</button>
 					</div>
 				</form>
 			</div>
