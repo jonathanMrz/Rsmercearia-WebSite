@@ -177,7 +177,6 @@
 		</div>
 		</div>
 	</div>
-	
 <!-- Carrosel_prod end-->
 <br>
 	<!-- Rodape start-->
@@ -185,28 +184,28 @@
     <div class="container-fluid py-3">
     <div class="row">
     <div class="col-4">
-        <ul class="nav flex-column">
-        <li class="nav-link"><a class="ah" href="#">Retornar à Loja</a></li>
-        <li class="nav-link"><a class="ah" href="#">Sobre</a></li>
-        <li class="nav-link"><a class="ah" href="#">Contato</a></li>
-        <li class="nav-link"><a class="ah" href="#">Suporte</a></li>
+        <ul class="nav rodap flex-column">
+        <li class="nav-link"><a href="#">Retornar à Loja</a></li>
+        <li class="nav-link"><a href="#">Sobre</a></li>
+        <li class="nav-link"><a href="#">Contato</a></li>
+        <li class="nav-link"><a href="#">Suporte</a></li>
         </ul>
     </div>
     <div class="col-8">
         <p>
 			Veja mais sobre a empresa em nossas redes sociais
         </p>
-        <ul class="nav">
-        <a class="ah" href="https://www.facebook.com/"><li class="nav-link" ><i class="fab fa-facebook fa-3x "></i></li></a>
-        <a class="ah" href="https://www.instagram.com/"><li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li></a>
-        <a class="ah" href="https://twitter.com/"><li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li></a>
-        <a class="ah" href="https://whatsapp.com/"><li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li></a>
+        <ul class="nav rodap">
+        <a href="https://www.facebook.com/"><li class="nav-link" ><i class="fab fa-facebook fa-3x "></i></li></a>
+        <a href="https://www.instagram.com/"><li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li></a>
+        <a href="https://twitter.com/"><li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li></a>
+        <a href="https://whatsapp.com/"><li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li></a>
         </ul>
     </div>
     </div>
     </div>
     <div class="text-center" style="background-color: #333; padding: 20px;" >
-    &copy 2024</a>
+    Rsmercearia -2016, 2024-</a>
     </div>
 </footer>
 <!-- Rodape end-->

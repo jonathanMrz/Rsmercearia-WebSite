@@ -14,6 +14,7 @@
 	<!-- Meu CSS/Js-->
   <link rel="stylesheet" href="front/externo/index/docs.theme.min.css">
 	<link rel="stylesheet" href="front/myfront/all.css">
+  <link rel="stylesheet" href="front/myfront/sobre/sobre.css">
 	<!-- Externo CSS/Js-->
 
 
@@ -59,7 +60,7 @@
 	</nav>
 	<main role="main">
     <!--Menu end-->
-  <section class="section_all bg-light" id="about">
+  
     
     <div class="container"> 
       <div class="row">
@@ -75,8 +76,8 @@
         <div class="col-lg-6">
           <div class="about_header_main mt-3">
             <h4 class="about_heading font-weight-bold ">História da Rsmercearia</h4>
-            <p class="text-muted mt-3">Fundada em 2016, a RS Mercearia se consolidou como um gigante em Belford Roxo, próximo ao Lote XV, encantando a comunidade com seu sistema de vendas eficiente e organizado.Para fazer parte da família RS Mercearia, cada cliente precisa ter um login único, nome completo e CPF válido. CEP e telefone são opcionais, mas facilitam o contato e a entrega de pedidos. Cada cliente pode realizar diversos pedidos, construindo um histórico de compras que facilita futuras transações. A magia acontece nos pedidos! Cada um recebe um código único para facilitar a identificação. Mas o que torna um pedido realmente especial? É a lista de itens que ele contém! Cada item possui um código único dentro do pedido, e se relaciona com um produto específico. A quantidade define quantas unidades daquele produto o cliente deseja, e o valor unitário e total garantem uma transação transparente.E para finalizar com chave de ouro, o pedido informa a forma de pagamento escolhida pelo cliente.</p>
-            <p class="text-muted mt-3"> A RS Mercearia oferece um universo de produtos incríveis! Cada um recebe um código único para facilitar a organização, e o nome do produto deixa claro do que se trata. A categoria define o grupo ao qual ele pertence, e a quantidade em estoque garante que nunca falte nada para os clientes. O valor unitário e o valor total são essenciais para uma compra transparente, e a descrição completa do produto aguça a curiosidade e aumenta as vendas. Para deixar tudo ainda mais organizado, as categorias agrupam produtos por tipo. Cada categoria recebe um código único para identificação e um nome descritivo que facilita a navegação dos clientes.</p>
+            <p class="mt-3">Fundada em 2016, a RS Mercearia se consolidou como um gigante em Belford Roxo, próximo ao Lote XV, encantando a comunidade com seu sistema de vendas eficiente e organizado.Para fazer parte da família RS Mercearia, cada cliente precisa ter um login único, nome completo e CPF válido. CEP e telefone são opcionais, mas facilitam o contato e a entrega de pedidos. Cada cliente pode realizar diversos pedidos, construindo um histórico de compras que facilita futuras transações. A magia acontece nos pedidos! Cada um recebe um código único para facilitar a identificação. Mas o que torna um pedido realmente especial? É a lista de itens que ele contém! Cada item possui um código único dentro do pedido, e se relaciona com um produto específico. A quantidade define quantas unidades daquele produto o cliente deseja, e o valor unitário e total garantem uma transação transparente.E para finalizar com chave de ouro, o pedido informa a forma de pagamento escolhida pelo cliente.</p>
+            <p class="mt-3"> A RS Mercearia oferece um universo de produtos incríveis! Cada um recebe um código único para facilitar a organização, e o nome do produto deixa claro do que se trata. A categoria define o grupo ao qual ele pertence, e a quantidade em estoque garante que nunca falte nada para os clientes. O valor unitário e o valor total são essenciais para uma compra transparente, e a descrição completa do produto aguça a curiosidade e aumenta as vendas. Para deixar tudo ainda mais organizado, as categorias agrupam produtos por tipo. Cada categoria recebe um código único para identificação e um nome descritivo que facilita a navegação dos clientes.</p>
           </div>
         </div>
 
@@ -86,35 +87,36 @@
           </div>
         </div>
       </div>
-
+<!--membros-->
+<a class="realo" id="nos" href="#nos">
       <div class="row mt-3">
-        <div class="about_detail text-center col-lg-3">
-          <h5 class="text-dark mt-3 font-weight-bold">Diretor Executivo</h5>
+        <div href="#" class="about_detail text-center per" data-toggle="modal" data-target="#modalExemplo1">
+          <p class="mt-3 font-weight-bold">Diretor Executivo</p>
           <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
-          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Gabriel Alves Da Silva</p>
+          <p class="edu_desc mt-3 mb-0 font-weight-bold">Gabriel Alves Sandre da Silva</p>
         </div>
 
-        <div class="about_detail text-center col-lg-3">
-          <h5 class="text-dark mt-3 font-weight-bold">Desenvolvedor full stack</h5>
+        <div class="about_detail text-center per" data-toggle="modal" data-target="#modalExemplo2">
+          <p class="mt-3 font-weight-bold">Desenvolvedor full stack</p>
           <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
-          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Jonathan Morozenviski Toledo</p>
+          <p class="edu_desc mt-3 mb-0 font-weight-bold">Jonathan Morozenviski Toledo</p>
         </div>
 
-        <div class="about_detail text-center col-lg-3">
-          <h5 class="text-dark mt-3 font-weight-bold">Marketing</h5>
+        <div class="about_detail text-center per" data-toggle="modal" data-target="#modalExemplo3">
+          <p class="mt-3 font-weight-bold">Marketing</p>
           <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
-          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Samara</p>
+          <p class="edu_desc mt-3 mb-0 font-weight-bold">Samara do Nascimento Gonçalves</p>
         </div>
 
-        <div class="about_detail text-center col-lg-3">
-          <h5 class="text-dark mt-3 font-weight-bold">xxxxx</h5>
+        <div class="about_detail text-center per" data-toggle="modal" data-target="#modalExemplo4">
+          <p class="mt-3 font-weight-bold">xxxxx</p>
           <img class="bd-placeholder-img rounded-circle" src="front/img/sobre/silhoueta.png" alt="" width="150px" height="150px" fill="var(--bs-secondary-color)">
-          <p class="edu_desc mt-3 mb-0 text-muted font-weight-bold">Maria Lopes</p>
+          <p class="edu_desc mt-3 mb-0 font-weight-bold">Maria Clara Lopes Silva</p>
         </div>
       </div>
     </div>
-  </section>
-
+    </a>
+<!--membros end-->
 
 
 
@@ -131,31 +133,137 @@
     <div class="container-fluid py-3">
     <div class="row">
       <div class="col-4">
-        <ul class="nav flex-column">
-          <li class="nav-link"><a class="ah" href="#">Retornar à Loja</a></li>
-          <li class="nav-link"><a class="ah" href="#">Sobre</a></li>
-          <li class="nav-link"><a class="ah" href="#">Contato</a></li>
-          <li class="nav-link"><a class="ah" href="#">Suporte</a></li>
+        <ul class="nav rodap flex-column">
+          <li class="nav-link"><a href="#">Retornar à Loja</a></li>
+          <li class="nav-link"><a href="#">Sobre</a></li>
+          <li class="nav-link"><a href="#">Contato</a></li>
+          <li class="nav-link"><a href="#">Suporte</a></li>
         </ul>
       </div>
       <div class="col-8">
         <p>
 			Veja mais sobre a empresa em nossas redes sociais
         </p>
-        <ul class="nav">
-          <a class="ah" href="https://www.facebook.com/"><li class="nav-link" ><i class="fab fa-facebook fa-3x "></i></li></a>
-          <a class="ah" href="https://www.instagram.com/"><li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li></a>
-          <a class="ah" href="https://twitter.com/"><li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li></a>
-          <a class="ah" href="https://whatsapp.com/"><li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li></a>
+        <ul class="nav rodap">
+          <a href="https://www.facebook.com/"><li class="nav-link" ><i class="fab fa-facebook fa-3x "></i></li></a>
+          <a href="https://www.instagram.com/"><li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li></a>
+          <a href="https://twitter.com/"><li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li></a>
+          <a href="https://whatsapp.com/"><li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li></a>
         </ul>
       </div>
     </div>
     </div>
     <div class="text-center" style="background-color: #333; padding: 20px;" >
-      &copy 2024</a>
+      Rsmercearia -2016, 2024-</a>
     </div>
   </footer>
   <!-- Rodape end-->
 
   </body>
 </html>
+
+<!-- Modal -->
+<div class="modal fade" id="modalExemplo1" >
+  <div class="modal-dialog" role="document">
+    <div class="card-container p1">
+      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+      <h3>Ricky Park</h3>
+      <h6>New York</h6>
+      <p>User interface designer and <br/> front-end developer</p>
+      <div class="buttons">
+        <button class="primary">Message</button>
+        <button class="primary ghost">Following</button>
+      </div>
+      <div class="skills">
+        <h6>Skills</h6>
+        <ul>
+          <li>UI / UX</li>
+          <li>Front End Development</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-sm" id="modalExemplo2" >
+<div class="modal-dialog" role="document">
+    <div class="card-container p2">
+      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+      <h3>Ricky Park</h3>
+      <h6>New York</h6>
+      <p>User interface designer and <br/> front-end developer</p>
+      <div class="buttons">
+        <button class="primary">Message</button>
+        <button class="primary ghost">Following</button>
+      </div>
+      <div class="skills">
+        <h6>Skills</h6>
+        <ul>
+          <li>UI / UX</li>
+          <li>Front End Development</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-sm" id="modalExemplo3" >
+<div class="modal-dialog" role="document">
+    <div class="card-container p3">
+      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+      <h3>Ricky Park</h3>
+      <h6>New York</h6>
+      <p>User interface designer and <br/> front-end developer</p>
+      <div class="buttons">
+        <button class="primary">Message</button>
+        <button class="primary ghost">Following</button>
+      </div>
+      <div class="skills">
+        <h6>Skills</h6>
+        <ul>
+          <li>UI / UX</li>
+          <li>Front End Development</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-sm" id="modalExemplo4" >
+<div class="modal-dialog" role="document">
+    <div class="card-container p4">
+      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+      <h3>Ricky Park</h3>
+      <h6>New York</h6>
+      <p>User interface designer and <br/> front-end developer</p>
+      <div class="buttons">
+        <button class="primary">Message</button>
+        <button class="primary ghost">Following</button>
+      </div>
+      <div class="skills">
+        <h6>Skills</h6>
+        <ul>
+          <li>UI / UX</li>
+          <li>Front End Development</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -45,14 +45,12 @@
 
 .card {
     height: var(--card-height);
-    aspect-ratio: 1/1.2;
     margin: calc(var(--card-height)*.04);
-    animation: cardBgAnimation 30s infinite ;
     position: relative;
-    cursor: pointer;
     right: 20%;
     transition: 200ms ease-in-out;
     border-radius: calc(var(--card-height)*.05);
+    border: #1f2635 solid 1px;
 }
 
 .container{
