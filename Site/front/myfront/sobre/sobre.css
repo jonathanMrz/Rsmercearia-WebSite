@@ -118,8 +118,14 @@ button.primary.ghost {
     }
 }
 .p1{
-    right: 400px;
+    right: 380px;
 }
 .p2{
-    right: 200px;
+    right: 120px;
+}
+.p3{
+    left: 150px;
+}
+.p4{
+    left: 450px;
 }

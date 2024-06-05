@@ -166,9 +166,9 @@
 <div class="modal fade" id="modalExemplo1" >
   <div class="modal-dialog" role="document">
     <div class="card-container p1">
-      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-      <h3>Ricky Park</h3>
-      <h6>New York</h6>
+      <img class="round" src="" alt="user" />
+      <h3>Gabriel Alves Sandre da Silva</h3>
+      <h6>Rio de Janeiro</h6>
       <p>User interface designer and <br/> front-end developer</p>
       <div class="buttons">
         <button class="primary">Message</button>
@@ -192,9 +192,9 @@
 <div class="modal fade bd-example-modal-sm" id="modalExemplo2" >
 <div class="modal-dialog" role="document">
     <div class="card-container p2">
-      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-      <h3>Ricky Park</h3>
-      <h6>New York</h6>
+      <img class="round" src="" alt="user" />
+      <h3>Jonathan Morozenviski Toledo</h3>
+      <h6>Rio de Janeiro</h6>
       <p>User interface designer and <br/> front-end developer</p>
       <div class="buttons">
         <button class="primary">Message</button>
@@ -218,9 +218,9 @@
 <div class="modal fade bd-example-modal-sm" id="modalExemplo3" >
 <div class="modal-dialog" role="document">
     <div class="card-container p3">
-      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-      <h3>Ricky Park</h3>
-      <h6>New York</h6>
+      <img class="round" src="" alt="user" />
+      <h3>Samara do Nascimento Gonçalves</h3>
+      <h6>Rio de Janeiro</h6>
       <p>User interface designer and <br/> front-end developer</p>
       <div class="buttons">
         <button class="primary">Message</button>
@@ -244,9 +244,9 @@
 <div class="modal fade bd-example-modal-sm" id="modalExemplo4" >
 <div class="modal-dialog" role="document">
     <div class="card-container p4">
-      <img class="round" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
-      <h3>Ricky Park</h3>
-      <h6>New York</h6>
+      <img class="round" src="" alt="user" />
+      <h3>Maria Clara Lopes Silva</h3>
+      <h6>Rio de Janeiro</h6>
       <p>User interface designer and <br/> front-end developer</p>
       <div class="buttons">
         <button class="primary">Message</button>
