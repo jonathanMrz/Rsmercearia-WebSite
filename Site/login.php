@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+if (isset($_SESSION["user"])) {
+	header("Location: index.php");
+}
+?>
+<html>
 
 <head>
 	<!-- Meta tags Obrigatórias -->
@@ -24,9 +29,74 @@
 
 <body>
 	<div class="img-back">
-		<a href="index.php">
-			<div class="loginless">Só olhar</div>
-		</a>
+		<div class="alerts">
+			<?php
+			if (isset($_POST["register"])) {
+				$fullname = $_POST["fullname_reg"];
+				$email = $_POST["email_reg"];
+				$tell = $_POST["tell_reg"];
+				$password = $_POST["password_reg"];
+				$passwordhash = password_hash($password, PASSWORD_DEFAULT);
+				$errors = array();
+				if (empty($fullname) or empty($email) or empty($tell) or empty($password)) {
+					array_push($errors, "Todos campos precisam estar preenchidos");
+				}
+				if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+					array_push($errors, "Email não é valido");
+				}
+				if (strlen($password) < 8) {
+					array_push($errors, "A senha precisa ter 8 caracteres ou mais");
+				}
+				require_once "backend/conexao.php";
+				$sql = "SELECT * FROM Users WHERE email = '$email'";
+				$result = mysqli_query($conn, $sql);
+				$rowCount = mysqli_num_rows($result);
+				if ($rowCount > 0) {
+					array_push($errors, "Esté email já está registrado");
+				}
+				if (count($errors) > 0) {
+					foreach ($errors as $error) {
+						echo "<p class='false'>-$error</p>";
+					}
+				} else {
+					$sql = "INSERT INTO Users (fullname, email , tell , password) VALUES ( ?, ?, ?, ? )";
+					$stmt = mysqli_stmt_init($conn);
+					$prepareStmt = mysqli_stmt_prepare($stmt, $sql);
+					if ($prepareStmt) {
+						mysqli_stmt_bind_param($stmt, "ssss", $fullname, $email, $tell, $passwordhash);
+						mysqli_stmt_execute($stmt);
+						echo "<div class='true'>-Registrado com sucesso</div>";
+					} else {
+						echo "<div class='false'>-Alguma coisa está muito errada..</div>";
+						die();
+					}
+				}
+			}
+			?>
+			<?php
+			if (isset($_POST["login"])) {
+				$email = $_POST["email_log"];
+				$password = $_POST["password_log"];
+				require_once "backend/conexao.php";
+				$sql = "SELECT * FROM Users WHERE email = '$email'";
+				$result = mysqli_query($conn, $sql);
+				$user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+				if ($user) {
+					if (password_verify($password, $user["password"])) {
+						session_start();
+						$_SESSION["user"] = "yes";
+						header("Location: index.php");
+						die();
+					} else {
+						echo "<div class='false'>-Senha invalido</div>";
+					}
+				} else {
+					echo "<div class='false'>-Email invalido</div>";
+				}
+			}
+			?>
+		</div>
+
 		<div class="veen">
 			<div class="login-btn splits">
 				<p>Já é usuário?</p>
@@ -36,50 +106,50 @@
 				<p>Não tem uma conta?</p>
 				<button class="">Registrar</button>
 			</div>
+
 			<div class="wrapper">
-				<form id="login" tabindex="500">
+
+				<form action="login.php" method="post" id="login">
 					<h3>Login</h3>
-					<div class="email">
-						<input type="email" name="">
+					<div class="grup-log">
+						<input name="email_log" type="text">
 						<label>E-mail</label>
 					</div>
-					<div class="senha">
-						<input type="password" name="">
+					<div class="grup-log">
+						<input name="password_log" type="password">
 						<label>Senha</label>
 					</div>
-					<div class="submit">
-						<button class="">Login</button>
+					<div class="grup-log">
+						<input name="login" type="submit" class="button" value="Login">
 					</div>
 				</form>
-				<form action="backend/login/login.php" method="POST" id="register" tabindex="502">
+
+				<form action="login.php" method="post" id="register">
 					<h3>Criar conta</h3>
-					<div class="name">
-						<input name="nome" id="nome" type="text" maxlength="100">
+					<div class="grup-reg">
+						<input name="fullname_reg" type="text">
 						<label>Nome completo</label>
 					</div>
-					<div class="mail">
-						<input name="email" id="telefone" type="email" maxlength="100">
+					<div class="grup-reg">
+						<input name="email_reg" type="text">
 						<label>E-mail</label>
 					</div>
-					<div class="telefone">
-						<input name="telefone" id="telefone" type="tel" id="phone" maxlength="15">
-						<label for="phone">Telefone</label>
+					<div class="grup-reg">
+						<input name="tell_reg" type="tel">
+						<label>Telefone</label>
 					</div>
-					<div class="cpf">
-						<input name="cpf" id="cpf" type="text" maxlength="20">
-						<label>CPF</label>
-					</div>
-					<div class="passwd">
-						<input name="senha" id="senha type=" password" maxlength="30">
+					<div class="grup-reg">
+						<input name="password_reg" type="password">
 						<label>Senha</label>
 					</div>
-					<div class="Enviar">
-						<button name="enviar" id="enviar" type="submit" class="">Registrar</button>
+					<div class="grup-reg">
+						<input name="register" type="submit" class="button" value="Registrar">
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
 </body>
 
 </html>

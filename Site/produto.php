@@ -38,6 +38,7 @@
             <img src="front/img/categoria.ico" width="25" height="25" alt="Categorias"> Categorias de produto
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="produto.php">Buscar</a>
             <a class="dropdown-item" href="pareciveis.php">Parecíveis</a>
             <a class="dropdown-item" href="limpeza.php">Limpeza</a>
             <a class="dropdown-item" href="papelaria.php">Papelaria</a>
@@ -47,8 +48,14 @@
         <li class="nav-item">
           <a class="nav-link" href="carrinho.php"><img src="front/img/carrinho.ico" width="20" height="20" alt="Categorias"> Carrinho</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.php"><img src="front/img/perfil.ico" width="20" height="20" alt="Categorias"> Perfil</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="front/img/perfil.ico" width="20" height="20" alt="Categorias"> Conta
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="perfil.php">Perfil</a>
+            <a class="dropdown-item" href="logout.php">Sair da conta</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="sobre.php"><img src="front/img/sobre.ico" width="20" height="20" alt="Categorias"> Sobre</a>
