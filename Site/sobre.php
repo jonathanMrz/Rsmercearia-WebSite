@@ -1,68 +1,78 @@
+<!-- Session -->
+<?php
+session_start();
+if (!isset($_SESSION["user"])) {
+  header("Location: login.php");
+}
+?>
 <html>
 
 <head>
-  <!-- Meta tags -->
+  <!-- Required Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="front/img/logo.ico">
+  <!-- All Css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <!-- Meu CSS -->
-  <link rel="stylesheet" href="front/externo/index/docs.theme.min.css">
+  <link rel="stylesheet" href="front/.bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="front/myfront/all.css">
+  <link rel="stylesheet" href="front/externo/docs.theme.min.css">
+  <!-- Sobre Css -->
   <link rel="stylesheet" href="front/myfront/sobre/sobre.css">
-  <!-- Externo CSS -->
-  <title>Rs Mercearia</title>
+
+  <title>Rs Mercearia Sobre</title>
 </head>
 
 <body>
-  <!-- Code start-->
-
-  <!-- Menu start -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" style="size: 250px;" href="index.php">
+    <!-- Home Page -->
+    <a class="navbar-brand" href="index.php">
       <img src="front/img/logo.ico" width="50" height="50" class="d-inline-block align-top" alt="">
       <font size="6">Rs Mercearia</font>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
+        <!-- Products -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="front/img/categoria.ico" width="25" height="25" alt="Categorias"> Categorias de produto
+            <img src="front/img/categoria.ico" width="25" height="25" alt="Categorias"> Produtos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="produto.php">Buscar</a>
-            <a class="dropdown-item" href="pareciveis.php">Parecíveis</a>
-            <a class="dropdown-item" href="limpeza.php">Limpeza</a>
-            <a class="dropdown-item" href="papelaria.php">Papelaria</a>
-            <a class="dropdown-item" href="outros.php">Outros</a>
+            <a class="dropdown-item" href="geral.php">Geral</a>
+            <a class="dropdown-item" href="categoria.php?id=1">Parecíveis</a>
+            <a class="dropdown-item" href="categoria.php?id=2">Limpeza</a>
+            <a class="dropdown-item" href="categoria.php?id=3">Papelaria</a>
+            <a class="dropdown-item" href="categoria.php?id=4">Outros</a>
           </div>
         </li>
+        <!-- Cart -->
         <li class="nav-item">
           <a class="nav-link" href="carrinho.php"><img src="front/img/carrinho.ico" width="20" height="20" alt="Categorias"> Carrinho</a>
         </li>
-        <li class="nav-item dropdown">
+        <!-- Account -->
+        <li class="nav-item dropdown user">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="front/img/perfil.ico" width="20" height="20" alt="Categorias"> Conta
-          </a>
+            <img src="front/img/user.ico" width="25" height="25" alt="Categorias"> <?php echo $_SESSION["name"]; ?></a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="perfil.php">Perfil</a>
             <a class="dropdown-item" href="logout.php">Sair da conta</a>
           </div>
         </li>
+        <!-- About -->
         <li class="nav-item">
           <a class="nav-link" href="sobre.php"><img src="front/img/sobre.ico" width="20" height="20" alt="Categorias"> Sobre</a>
         </li>
+        <!-- Administration -->
+        <?php if ($_SESSION["email"] == "admin@gmail.com") { ?>
+          <li class="nav-item">
+            <a class="nav-link" href="administração.php"><img src="front/img/admin.ico" width="20" height="20" alt="Administração"> Administração</a>
+          </li>
+        <?php } ?>
       </ul>
     </div>
   </nav>
-  <main role="main"></main>
-  <!--Menu end-->
-  <!-- Conteiner start -->
+  <!-- Navbar End -->
+  <!-- Conteiner -->
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -84,13 +94,13 @@
 
       <div class="col-lg-6">
         <div class="img_about mt-3">
-          <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+          <img src="front/img/sobre/About-us.png" alt="" class="img-fluid mx-auto d-block">
         </div>
       </div>
     </div>
     <!-- Conteiner end -->
 
-    <!-- membros start -->
+    <!-- Membros -->
     <a class="realo" id="nos" href="#nos">
       <div class="row mt-3">
         <div href="#" class="about_detail text-center per" data-toggle="modal" data-target="#modalExemplo1">
@@ -119,12 +129,13 @@
       </div>
   </div>
   </a>
-  <!--membros end-->
+  <!--Membros End-->
 
-  <!-- Rodape start-->
+  <!-- Footer -->
   <footer class="bg-dark text-light">
     <div class="container-fluid py-3">
       <div class="row">
+        <!-- Left Links -->
         <div class="col-4">
           <ul class="nav rodap flex-column">
             <li class="nav-link"><a href="#">Retornar à Loja</a></li>
@@ -137,6 +148,7 @@
           <p>
             Veja mais sobre a empresa em nossas redes sociais
           </p>
+          <!-- Main Links -->
           <ul class="nav rodap">
             <a href="https://www.facebook.com/">
               <li class="nav-link"><i class="fab fa-facebook fa-3x "></i></li>
@@ -158,32 +170,29 @@
       Rsmercearia -2016, 2024-</a>
     </div>
   </footer>
-  <!-- Rodape end-->
+  <!-- Footer End-->
 </body>
 
 </html>
-<!-- Modal start -->
+<!-- Modal -->
 <div class="modal fade" id="modalExemplo1">
   <div class="modal-dialog" role="document">
     <div class="card-container p1">
       <img class="round" src="" alt="user" />
       <h3>Gabriel Alves Sandre da Silva</h3>
       <h6>Rio de Janeiro</h6>
-      <p>User interface designer and <br /> front-end developer</p>
+      <p>text</p>
       <div class="buttons">
-        <button class="primary">Message</button>
-        <button class="primary ghost">Following</button>
+        <button class="primary">Contato</button>
       </div>
       <div class="skills">
-        <h6>Skills</h6>
+        <h6>Habilidades</h6>
         <ul>
-          <li>UI / UX</li>
-          <li>Front End Development</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </div>
@@ -195,21 +204,17 @@
       <img class="round" src="" alt="user" />
       <h3>Jonathan Morozenviski Toledo</h3>
       <h6>Rio de Janeiro</h6>
-      <p>User interface designer and <br /> front-end developer</p>
+      <p>text</p>
       <div class="buttons">
-        <button class="primary">Message</button>
-        <button class="primary ghost">Following</button>
+        <button class="primary">Contato</button>
       </div>
       <div class="skills">
-        <h6>Skills</h6>
+        <h6>Habilidades</h6>
         <ul>
-          <li>UI / UX</li>
-          <li>Front End Development</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </div>
@@ -221,21 +226,17 @@
       <img class="round" src="" alt="user" />
       <h3>Samara do Nascimento Gonçalves</h3>
       <h6>Rio de Janeiro</h6>
-      <p>User interface designer and <br /> front-end developer</p>
+      <p>text</p>
       <div class="buttons">
-        <button class="primary">Message</button>
-        <button class="primary ghost">Following</button>
+        <button class="primary">Contato</button>
       </div>
       <div class="skills">
-        <h6>Skills</h6>
+        <h6>Habilidades</h6>
         <ul>
-          <li>UI / UX</li>
-          <li>Front End Development</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </div>
@@ -247,27 +248,22 @@
       <img class="round" src="" alt="user" />
       <h3>Maria Clara Lopes Silva</h3>
       <h6>Rio de Janeiro</h6>
-      <p>User interface designer and <br /> front-end developer</p>
+      <p>text</p>
       <div class="buttons">
-        <button class="primary">Message</button>
-        <button class="primary ghost">Following</button>
+        <button class="primary">Contato</button>
       </div>
       <div class="skills">
-        <h6>Skills</h6>
+        <h6>Habilidades</h6>
         <ul>
-          <li>UI / UX</li>
-          <li>Front End Development</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-<!-- Modal end -->
+<!-- Modal End -->
 
 <!-- Scripts Js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

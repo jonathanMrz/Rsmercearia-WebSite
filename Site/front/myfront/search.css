@@ -1,0 +1,91 @@
+
+body{
+    background-color: rgb(235, 234, 236);
+}
+html{
+    background-color: rgb(235, 234, 236);
+}
+.sinput{
+    transition: all 0.5s;
+}
+.sinput:focus {
+    box-shadow: 0 0 3px #000000b9;
+    border-color: #818181;
+    outline: none;
+}
+.sbnt{
+    transition: all 0.5s;
+}
+.sbnt:hover{
+    box-shadow: 0 0 3px #000000b9;
+    border-color: #818181;
+    outline: none;
+}
+.sbnt:active{
+    transform: scale(1.1);
+    box-shadow: 0 0 3px  #000000;
+    border-color: #000000;
+    outline: none;
+}
+.cat{
+    background-color: rgb(41, 41, 41);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    height: 40px;
+    padding: 9px;
+    
+}
+.cat:hover{
+
+    text-decoration: none;
+    color: white;
+    cursor: default;
+}
+.list-group{
+    width: 200px;
+    position: relative;
+    left: 70px;
+    border-radius: 2%;
+    border: #c0c0c0 solid 1px;
+}
+.list-group-item-action{
+    transition: all 0.5s;
+}
+.list-group-item-action:hover{
+    transform: scale(1.05);
+    background-color: #d4d4d4;
+    color: rgb(0, 0, 0);
+}
+
+.card-img-top{
+    border: solid rgb(224, 224, 224) 1px;    
+    width: 250px;
+    height: 250px;
+
+}
+.item-show{
+
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 3px rgb(224, 224, 224);
+}
+.item-show:hover{
+    text-decoration:none;
+    transform: scale(1.03);
+    box-shadow: 0px 0px 4px rgb(224, 224, 224);
+}
+.grinp{
+    left: 300px;
+}
+a:hover{text-decoration: none;}
+.comeback{
+    font-size: 30px;
+}
+.containerr{
+    position: relative;
+    width: 90%;
+    left: 1%;
+}

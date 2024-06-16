@@ -28,7 +28,14 @@ if (isset($_SESSION["user"])) {
 </head>
 
 <body>
-	<div class="img-back">
+	<div class="img-back" style="
+	background-image: url(front/img/login/login.gif);
+	padding: 1px;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: round;">
 		<div class="alerts">
 			<?php
 			if (isset($_POST["register"])) {

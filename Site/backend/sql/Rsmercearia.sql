@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 16/06/2024 às 04:01
+-- Tempo de geração: 16/06/2024 às 23:28
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.0.30
 
@@ -37,10 +37,10 @@ CREATE TABLE `Categorias` (
 --
 
 INSERT INTO `Categorias` (`id`, `nome`) VALUES
-(1, 'pereciveis'),
-(2, 'limpeza'),
-(3, 'papelaria'),
-(4, 'outros');
+(1, 'Perecíveis'),
+(2, 'Limpeza'),
+(3, 'Papelaria'),
+(4, 'Outros');
 
 -- --------------------------------------------------------
 
@@ -61,11 +61,23 @@ CREATE TABLE `Items` (
 --
 
 INSERT INTO `Items` (`id_item`, `nome`, `id_categoria`, `valor`, `img`) VALUES
-(101, 'aaa', 1, 13.00, 'a.png'),
-(102, 'testeas', 1, 14.89, 'a.png'),
-(103, 'teste_item_limpeza', 2, 11.99, 'a.png'),
-(104, 'item_teste_papelaria', 3, 41.99, 'a.png\r\n'),
-(105, 'item_teste_outros', 4, 99.99, 'a.png');
+(101, 'Estrato de Tomate', 1, 9.00, 'tomate.jpg'),
+(102, 'Nescau', 1, 8.89, 'nescau.jpg'),
+(103, 'Desinfetante Casa&Perfume', 2, 11.99, 'desinfetantecep.jpg'),
+(104, 'Caneta Esferográfica Azul', 3, 2.00, 'canetaazul.jpg\r\n'),
+(105, 'Papel Higienico', 4, 2.00, 'higienico.jpg'),
+(106, 'Massa de Bolo Regina', 1, 8.99, 'boloregina.jpg'),
+(107, 'Picolé', 1, 2.00, 'picoles.jpg'),
+(108, 'Vassoura Piaçava', 2, 11.00, 'vassoura.jpg'),
+(109, 'Sacolé', 1, 3.00, 'sacole.jpg'),
+(110, 'Detergente Ype', 2, 3.00, 'detergenteype.jpg'),
+(111, 'Lápis', 3, 1.50, 'lapisgenerico.jpg'),
+(112, 'Borracha', 3, 1.50, 'borrachaescola.jpg'),
+(113, 'Marca Texto', 3, 3.00, 'marcatexto.jpg'),
+(114, 'Gillete de Barbear', 4, 2.00, 'gilletebar.jpg'),
+(115, 'Pasta de Dente Colgate', 4, 6.99, 'pastacolgate.jpg'),
+(116, 'Escova de Dente', 4, 8.00, 'escovadente.jpg'),
+(117, 'Água Sanitária Brilux', 2, 9.00, 'aguasanitariab.jpg');
 
 -- --------------------------------------------------------
 
@@ -130,7 +142,7 @@ ALTER TABLE `Categorias`
 -- AUTO_INCREMENT de tabela `Items`
 --
 ALTER TABLE `Items`
-  MODIFY `id_item` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id_item` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT de tabela `Users`

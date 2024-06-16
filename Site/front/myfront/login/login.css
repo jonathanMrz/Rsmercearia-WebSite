@@ -1,13 +1,3 @@
-.img-back {
-	background-image: url(https://miro.medium.com/v2/resize:fit:3000/1*mVa7DA7XfZUb0cDpNj-Vng.gif);
-	padding: 1px;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-repeat: round;
-}
-
 .veen {
 	border-radius: 10px;
 	width: 70%;

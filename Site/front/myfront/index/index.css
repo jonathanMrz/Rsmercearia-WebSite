@@ -57,23 +57,6 @@
     background-color: #1f2635;
 }
 
-.card-1{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/pereciveis.jpg);
-}
-.card-2{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/limpeza.jpg);
-}
-.card-3{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/papelaria.jpg);
-}
-.card-4{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/cards/outros.jpg);
-}
-
 .header {
     padding: 1rem 5rem;
 
@@ -278,33 +261,5 @@
 .item-card{
     background-size: cover;
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
-}
-.icard-1{
-    position: absolute;
-    background: url(https://github.com/jonathanMrz/rsmercearia/blob/main/Site/front/img/index/caurosel-prod/picoles.jpg?raw=true);
-}
-.icard-2{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/caurosel-prod/sacole.jpg);
-}
-.icard-3{
-    position: absolute;
-    background: url(https://github.com/jonathanMrz/rsmercearia/blob/main/Site/front/img/index/caurosel-prod/boloregina.jpg?raw=true);
-}
-.icard-4{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/caurosel-prod/tomate.jpg);
-}
-.icard-5{
-    position: absolute;
-    background: url(https://github.com/jonathanMrz/rsmercearia/blob/main/Site/front/img/index/caurosel-prod/higienico.jpg?raw=true);
-}
-.icard-6{
-    position: absolute;
-    background: url(https://github.com/jonathanMrz/rsmercearia/blob/main/Site/front/img/index/caurosel-prod/vassoura.jpg?raw=true);
-}
-.icard-7{
-    position: absolute;
-    background: url(https://raw.githubusercontent.com/jonathanMrz/rsmercearia/main/Site/front/img/index/caurosel-prod/desinfetante.jpg);
 }
 /*Carrossel_prod end*/
