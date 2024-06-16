@@ -81,6 +81,8 @@ if (isset($_SESSION["user"])) {
 				$sql = "SELECT * FROM Users WHERE email = '$email'";
 				$result = mysqli_query($conn, $sql);
 				$user = mysqli_fetch_array($result, MYSQLI_ASSOC);
+				$_SESSION["name"] = $user["fullname"];
+				$_SESSION["email"] = $email;
 				if ($user) {
 					if (password_verify($password, $user["password"])) {
 						session_start();

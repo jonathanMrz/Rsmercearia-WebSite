@@ -1,14 +1,16 @@
-.navbar{
+.navbar {
     box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
 }
-html{
-    background-color:rgba(204, 204, 204, 0.096);
+
+html {
+    background-color: rgba(204, 204, 204, 0.096);
 }
 
 
-.rodap{
+.rodap {
     transition: all .25s;
 }
+
 .rodap a {
     padding: .3em .5em;
     position: relative;
@@ -16,10 +18,12 @@ html{
     color: white;
     text-decoration: none;
     transition: all .35s;
-    &&:hover{
+
+    &&:hover {
         color: #000000;
     }
-    &&:active{
+
+    &&:active {
         color: rgb(255, 255, 255);
     }
 }
@@ -53,23 +57,28 @@ html{
 }
 
 .rodap a:hover:before,
-.rodap a:hover:after{
-    transform: translate(0,0);
+.rodap a:hover:after {
+    transform: translate(0, 0);
     opacity: 1;
 }
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(73, 73, 73);
     background-color: #ffffff;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right,rgb(136, 136, 136),rgb(68, 68, 68),rgb(138, 138, 138)) ;
-  }
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, rgb(136, 136, 136), rgb(68, 68, 68), rgb(138, 138, 138));
+}
+
+.user{
+    position: relative;
+    
+}

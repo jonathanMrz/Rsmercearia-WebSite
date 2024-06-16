@@ -8,24 +8,23 @@ if (!isset($_SESSION["user"])) {
 
 <head>
 	<!-- Meta tags -->
-	<link rel="icon" type="image/png" href="front/img/logo.ico">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/png" href="front/img/logo.ico">
 	<!-- Bootstrap CSS  -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-	<!-- Meu CSS -->
-	<link rel="stylesheet" href="front/myfront/all.css">
+	<!-- All CSS -->
 	<link rel="stylesheet" href="front/myfront/index/index.css">
-	<script src="front/myfront/index/index.js"></script>
-	<!-- Externo CSS -->
+	<link rel="stylesheet" href="front/myfront/all.css">
 	<link rel="stylesheet" href="front/externo/index/docs.theme.min.css">
+	<!-- One CSS -->
+	<script src="front/myfront/index/index.js"></script>
 	<link rel="stylesheet" href="front/externo/index/owl.carousel.min.css">
 	<title>Rs Mercearia</title>
 </head>
 
 <body>
-	<!-- Code start-->
 	<!-- Menu start -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" style="size: 250px;" href="index.php">
@@ -42,33 +41,36 @@ if (!isset($_SESSION["user"])) {
 						<img src="front/img/categoria.ico" width="25" height="25" alt="Categorias"> Categorias de produto
 					</a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="produto.php">Buscar</a>
-						<a class="dropdown-item" href="pareciveis.php">Parecíveis</a>
-						<a class="dropdown-item" href="limpeza.php">Limpeza</a>
-						<a class="dropdown-item" href="papelaria.php">Papelaria</a>
-						<a class="dropdown-item" href="outros.php">Outros</a>
+						<a class="dropdown-item" href="store.php">Store</a>
+						<a class="dropdown-item" href="categoria.php?id=1">Parecíveis</a>
+						<a class="dropdown-item" href="categoria.php?id=2">Limpeza</a>
+						<a class="dropdown-item" href="categoria.php?id=3">Papelaria</a>
+						<a class="dropdown-item" href="categoria.php?id=4">Outros</a>
 					</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="carrinho.php"><img src="front/img/carrinho.ico" width="20" height="20" alt="Categorias"> Carrinho</a>
 				</li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown user">
 					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<img src="front/img/perfil.ico" width="20" height="20" alt="Categorias"> Conta
-					</a>
+						<img src="front/img/user.ico" width="25" height="25" alt="Categorias"> <?php echo $_SESSION["name"]; ?></a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="perfil.php">Perfil</a>
 						<a class="dropdown-item" href="logout.php">Sair da conta</a>
 					</div>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="sobre.php"><img src="front/img/sobre.ico" width="20" height="20" alt="Categorias"> Sobre</a>
 				</li>
+				<?php if ($_SESSION["email"] == "admin@gmail.com") { ?>
+					<li class="nav-item">
+						<a class="nav-link" href="administração.php"><img src="front/img/admin.ico" width="20" height="20" alt="Administração"> Administração</a>
+					</li>
+				<?php } ?>
 			</ul>
 		</div>
 	</nav>
+	<!-- Menu end -->
 	<main role="main">
-		<!-- Menu end -->
 		<div class="scar">
 			<br>
 			<!-- Carrosseu start-->
