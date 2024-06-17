@@ -4,6 +4,11 @@ session_start();
 if (!isset($_SESSION["user"])) {
 	header("Location: login.php");
 }
+include "backend/func/db_conn.php";
+include "backend/func/func-item.php";
+$Items = get_all_Items($conn);
+include "backend/func/func-categoria.php";
+$Categorias = get_all_Categorias($conn);
 ?>
 <html>
 
@@ -151,76 +156,38 @@ if (!isset($_SESSION["user"])) {
 	<div class="header-prod">
 		<div class="header-title">Produtos em destaque</div>
 	</div>
-	<section id="demos">
-		<div class="roww">
-			<div class="large-15 columns">
-				<div class="owl-carousel owl-theme">
-					<!-- First Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-1" style="background-image: url(front/img/produto/picoles.jpg);position: absolute;">
-								<div class="title">Picolé</div>
-								<p class="uni">R$2.00 comum R$3.00 especial</p>
+	<?php if ($Items == 0) { ?>
+		<div class="alert alert-warning text-center p-5" role="alert">
+			<img src="img/empty.png" width="100">
+			<br>
+			Nenhum item foi encontrado
+		</div>
+	<?php } else { ?>
+		<section id="demos">
+			<div class="roww">
+				<div class="large-15 columns">
+					<div class="owl-carousel owl-theme">
+						<!-- First Item -->
+						<?php foreach ($Items as $item) { ?>
+							<div class="item">
+								<a href="produto.php">
+									<div class="item-card icard-1" style="background-image: url(front/img/produto/<?= $item['img'] ?>);position: absolute;">
+										<div class="title"><?= $item['nome'] ?></div>
+										<p class="uni">Preço: R$<?= $item['valor'] ?><br>Categoria:
+											<?php foreach ($Categorias as $categoria) {
+												if ($categoria['id'] == $item['id_categoria']) {
+													echo $categoria['nome'];
+													break;
+												}
+											} ?></p>
+									</div>
+								</a>
 							</div>
-						</a>
-					</div>
-					<!-- Seccond Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-2" style="background-image: url(front/img/produto/picoles.jpg);position: absolute;">
-								<div class="title">Sacolé</div>
-								<p class="uni">R$1.00 a unidade</p>
-							</div>
-						</a>
-					</div>
-					<!-- Third Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-3" style="background-image: url(front/img/produto/picoles.jpg);position: absolute;">
-								<div class="title">Massa de bolo Regina</div>
-								<p class="uni">R$5.50 a unidade</p>
-							</div>
-						</a>
-					</div>
-					<!-- Fourth Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-4" style="background-image: url(front/img/produto/picoles.jpg);position: absolute;">
-								<div class="title">Molho de tomate Pramesa</div>
-								<p class="uni">R$2.00 a unidade</p>
-							</div>
-						</a>
-					</div>
-					<!-- Fifith Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-5" style="background-image: url(front/img/produto/picoles.jpg);position: absolute;">
-								<div class="title">Papel higiênico Max</div>
-								<p class="uni">R$6.00 o pacote</p>
-							</div>
-						</a>
-					</div>
-					<!-- Sixth Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-6" style="background-image: url(front/img/produto/vassoura.jpg);position: absolute;">
-								<div class="title">Vassoura piaçava</div>
-								<p class="uni">R$11.00 a unidade</p>
-							</div>
-						</a>
-					</div>
-					<!-- Seventh Item -->
-					<div class="item">
-						<a href="produto.php">
-							<div class="item-card icard-7" style="background-image: url(front/img/produto/picoles.jpg);position: absolute;">
-								<div class="title">Alvejante Casa&Perfume</div>
-								<p class="uni">R$6.00 a unidade</p>
-							</div>
-						</a>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
-		</div>
+		<?php } ?>
 		<!-- Carousel Items End-->
 		<br>
 		<!-- Footer -->
