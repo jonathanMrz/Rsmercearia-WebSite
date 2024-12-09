@@ -1,6 +1,8 @@
 # Rsmercearia
-Creating a website for school work
+Rsmercearia, Brazilian store website
 
-//Finalized
+//Descontinued
 
-ps: the website is not complete, but I presented it, and therefore I will not continue its production
+ps: My first prototype of website. Don't have responsivity
+
+Website online: [http://rsmercearia.great-site.net/](http://rsmercearia.great-site.net/)
